@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -18,16 +19,16 @@ const Navbar = () => {
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li>
-              <a href="#" className="block py-2 pl-3 pr-4 text-white bg-ascent-500 rounded md:bg-transparent md:text-ascent-500 md:p-0" aria-current="page">Home</a>
+              <Link to="/" className="block py-2 pl-3 pr-4 text-white bg-ascent-500 rounded md:bg-transparent md:text-ascent-500 md:p-0" aria-current="page">Home</Link>
             </li>
             <li>
-              <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-ascent-500 md:p-0" >About</a>
+              <Link to="/about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-ascent-500 md:p-0" >About</Link>
             </li>
             <li>
-              <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-ascent-500 md:p-0">Services</a>
+              <Link to="/services" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-ascent-500 md:p-0">Services</Link>
             </li>
             <li>
-              <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-ascent-500 md:p-0">Contact</a>
+              <Link to="/contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-ascent-500 md:p-0">Contact</Link>
             </li>
           </ul>
         </div>
