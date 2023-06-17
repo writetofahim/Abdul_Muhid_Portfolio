@@ -6,15 +6,12 @@ const WhoMe = () => {
   return (
     <div className="container mx-auto flex md:flex-nowrap flex-wrap items-center gap-5 md:py-24 py-10 px-5">
       <div className="md:w-1/2 gap-5">
-        <img className="md:w-3/5 w-full mx-auto" src={abdulMuhit2} alt="" />
+        <img className="lg:w-4/5 w-full " src={abdulMuhit2} alt="" />
       </div>
       <div className="md:w-1/2 w-full">
-        <button
-          type="button"
-          className="text-ascent-500 hover:text-white bg-primary-500 hover:bg-ascent-500 font-medium  text-lg px-4 py-1 text-center mr-3 md:mr-0 duration-300 my-3 shadow"
-        >
+        <div className="text-ascent-500 bg-primary-500 font-medium text-lg px-4 py-1 text-center mr-3 md:mr-0 duration-300 my-3 shadow w-max">
           Who Me
-        </button>
+        </div>
         <h3 className="md:text-6xl text-3xl flex flex-wrap w-full font-title">
           <span className="text-ascent-400"> Experienced Accountant, </span>
           <span className="text-ascent-400"> Account Reconciliation, </span>
