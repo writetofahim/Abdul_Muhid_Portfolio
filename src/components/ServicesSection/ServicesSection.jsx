@@ -15,16 +15,15 @@ const ServicesSection = () => {
         >
           Services{" "}
         </button>
-        <h3 className="md:text-6xl text-3xl flex flex-wrap max-w-[350px] w-full">
-          <span className="text-secondary-500"> Our specialty </span>
-          <span className="text-secondary-500"> Accounting </span>
-          <span className="text-secondary-500"> Tax & CFO </span>
+        <h3 className="md:text-6xl text-3xl flex flex-wrap max-w-[350px] w-full font-title">
+          <span className="text-ascent-400"> Our specialty </span>
+          <span className="text-ascent-400"> Accounting </span>
+          <span className="text-ascent-400"> Tax & CFO </span>
           <span> Services.</span>
         </h3>
-        <p className="mt-5 text-gray-600 max-w-[450px] w-full">
-          Our Specialty: Accounting, Tax & CFO Services. Expertise in financial
-          management, tax compliance, and strategic guidance for business
-          success.
+        <p className="mt-5 text-gray-600 max-w-[450px] w-full ">
+          Accounting, Tax & CFO Services. Expertise in financial management, tax
+          compliance, and strategic guidance for business success.
         </p>
       </div>
       <div className="md:w-1/2 grid grid-cols-2 gap-5">
@@ -57,10 +56,10 @@ const ServicesSection = () => {
 const ServiceCard = ({ service }) => {
   const { title, icon } = service;
   return (
-    <div className="flex items-center justify-center p-10 border border-gray-300 gap-5 relative hover:bg-ascent-200/50 duration-300 border border-ascent-200/50 hover:border-ascent-400">
-      <div>
+    <div className="flex items-center justify-center p-10 border border-gray-300 gap-5 relative hover:bg-ascent-200/50 duration-300  border-ascent-200/50 hover:border-ascent-400">
+      <div className="flex flex-col items-center gap-3">
         <img className="w-20" src={icon} alt="" />
-        <h4>{title}</h4>
+        <h4 className="text-sm md:text-base w-max">{title}</h4>
         <div className="absolute top-0 right-0 p-3 bg-ascent-400 hover:bg-black duration-300 text-white">
           <BsArrowUpRight />
         </div>

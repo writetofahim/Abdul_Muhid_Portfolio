@@ -10,7 +10,9 @@ const Footer = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
             <div className="flex flex-col ">
-              <h2 className="text-3xl font-bold mb-3">Abdul Muhit</h2>
+              <h2 className="text-4xl font-bold mb-3 font-title">
+                Abdul Muhit
+              </h2>
               <p className="">
                 Accountant at Gilligan & Co. Chartered Accountants & Registered
                 Auditors – Clonmel, Carrick-on-Suir & Kilkenny
@@ -30,7 +32,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="ml-5">
+            <div className="md:ml-5 ml-0">
               <h3 className="font-bold text-2xl">Company</h3>
               <ul className="flex flex-col gap-3 mt-3">
                 <li>About Me</li>
@@ -66,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center py-3 bg-ascent-500 text-white">
+      <p className="text-center py-5 bg-ascent-500 text-white">
         Copyright © 2023 Abdul Muhit
       </p>
     </footer>

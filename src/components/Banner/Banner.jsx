@@ -19,13 +19,15 @@ const Banner = () => {
         </svg>
       </div>
       <div className=" container mx-auto flex flex-wrap justify-center items-center bg-no-repeat">
-        <div className="md:w-1/2 w-full md:order-1 order-2 p-5">
-          <h1 className="md:text-[87px] text-4xl w-max leading-[80px] font-bold">
+        <div className="md:w-1/2 w-full p-5">
+          <h1 className="md:text-[87px] text-5xl w-max leading-[80px] font-bold font-title md:text-left text-center">
             I'm Abdul Muhit{" "}
           </h1>
-          <p>(AFA,AAIA, MIPA,AITI,MAAT,MACC,BBS (HONS)</p>
+          <p className="md:text-left text-center">
+            (AFA,AAIA, MIPA,AITI,MAAT,MACC,BBS (HONS)
+          </p>
 
-          <p>
+          <p className="md:text-left text-center">
             Accountant at Gilligan & Co. Chartered Accountants & Registered
             Auditors – Clonmel, Carrick-on-Suir & Kilkenny
           </p>
@@ -36,7 +38,7 @@ const Banner = () => {
             Contact Me
           </button>
         </div>
-        <div className="md:w-1/2 w-full md:order-2 order-1">
+        <div className="md:w-1/2 w-full ">
           <img className="w-full" src={hero} alt="" />
         </div>
       </div>
